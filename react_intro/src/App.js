@@ -23,3 +23,10 @@ function App() {
 }
 
 export default App;
+
+function MyButton() {
+    return (
+      <button>I'm a button</button>
+    );
+  }
+  
