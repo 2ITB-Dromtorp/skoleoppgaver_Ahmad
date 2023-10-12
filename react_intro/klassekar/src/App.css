@@ -1,0 +1,12 @@
+.grid-container {
+    font-size: 100px;
+  }
+  
+
+  .grid-item {
+    padding: 20px;
+    border: 50px solid #ff0000; 
+    justify-content: center;
+    
+  }
+  
