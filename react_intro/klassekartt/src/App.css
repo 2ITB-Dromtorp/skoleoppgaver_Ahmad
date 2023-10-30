@@ -49,7 +49,7 @@
     padding: 2em;
     width: 2em;
     margin-top: 2em;
-    border: solid white 2px;
+    border: solid rgb(0, 0, 0) 2px;
     font-size: 2em;
   }
   
@@ -64,7 +64,7 @@
     align-items: center;
     width: 50%;
     height: 100%;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
   }
   
   .rightside {
@@ -73,7 +73,7 @@
     align-items: center;
     width: 50%;
     height: 100%;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
   }
   
   .profile-container {
@@ -82,18 +82,18 @@
     align-items: center;
     height: 100vh;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
   
   }
   
   .profile-box {
     border: solid black 2px;
-    background: rgb(63, 6, 6);
+    background: rgb(31, 27, 27);
     height: 50%;
   }
 
   .sitteplasser{
-    color: white;
+    color: rgb(0, 0, 0);
   }
 
   button {
