@@ -1,16 +1,18 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
-export default function Navbar() {
+export default function Navbar({ user }) {
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
 
         <img id="dromtorplogo" src="https://viken.no/kunde/grafikk/dr%C3%B8mtorp-videreg%C3%A5ende-skole.svg" />
       </Link>
+      {user ? user.user[0].email :
       <ul>
         <CustomLink to="/Logginn">Logg inn</CustomLink>
-        <CustomLink to="/Registrer">Registrer</CustomLink>
+        <CustomLink to="/Registrer"></CustomLink>
       </ul>
+        }
     </nav>
   )
 }

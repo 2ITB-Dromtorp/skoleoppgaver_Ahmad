@@ -1,40 +1,56 @@
 import { useParams } from "react-router-dom"
+//import { useState} from 'react'
+    
+/*export function confirmSignUp() {
+    const [KursM, setKursM] = useState("Meld meg på")
+    return(<button id="myButton" onClick={(e) => {
+        setKursM("meld meg av")
+    }}>{KursM}</button>)
+
+ }*/
+
+    
 
 const alleKurs = {
     kroppsoving: {
         innhold: (
-           
+            <>
+            
            
            <p id="gymside" >
-                
 
-                <h1 id="mentzer"> Kroppsøving er mye mer enn bare fysisk aktivitet – det er en utforskning av kroppens potensial, bevegelsesmønstre og helse. I dette kurset vil vi utforske hvordan kroppen fungerer og utvikler, seg gjennom ulike former for trening og aktivitet. Vi vil se på både teoretiske og praktiske aspekter av kroppsøving, inkludert anatomi, idrettslige ferdigheter, helsefordeler og metoder for å  </h1>
+            <confirmSignUp />
 
+            <h1 id="mentzer">    Du er nå meldt på! Kroppsøving er mye mer enn bare fysisk aktivitet – det er en utforskning av kroppens potensial, bevegelsesmønstre og helse. I dette kurset vil vi utforske hvordan kroppen fungerer og utvikler, seg gjennom ulike former for trening og aktivitet. Vi vil se på både teoretiske og praktiske aspekter av kroppsøving, inkludert anatomi, idrettslige ferdigheter, helsefordeler og metoder for å  </h1>
                 
                 <img id="mentzer" src="https://pngimg.com/d/dumbbell_PNG16376.png" alt="arnold"/>
                  </p>
-                
-                
-                
-                
-        ),
+
+
+                 </>
+                 ),
+                 
     },
-
-
-
     
     norsk: {
         innhold: (
-            <>
-             Norsk
-            </>
+            
+            
+            <h1 id="norsktekst">
+                
+    
+             Du er nå meldt på!
+             
+             <img id="norskbok" src="https://res-3.cloudinary.com/forlagshuset/image/upload/c_fit,q_auto:best,w_300/9788211042224" alt="arnold"/>
+            </h1>
+            
         ),
     },
     heimkunnskap: {
         innhold: (
             <>
                <p id="heim"> 
-Heimkunskap, også kjent som husholdningskunnskap eller hjemmeøkonomi, er et fagområde som fokuserer på praktiske ferdigheter og kunnskap som er viktige for å kunne håndtere ulike aspekter av dagliglivet. Dette kan inkludere alt fra matlaging, renhold og personlig økonomi til husstell, klespleie og ernæring.
+<p id="hovedskrift"> Du er nå meldt på! </p>Heimkunskap, også kjent som husholdningskunnskap eller hjemmeøkonomi, er et fagområde som fokuserer på praktiske ferdigheter og kunnskap som er viktige for å kunne håndtere ulike aspekter av dagliglivet. Dette kan inkludere alt fra matlaging, renhold og personlig økonomi til husstell, klespleie og ernæring.
 
 En introduksjon til heimkunskap kan inneholde:
 
@@ -66,6 +82,8 @@ Det er ofte en nyttig ressurs for alle, uavhengig av alder eller erfaring, da de
     datakunnskap: {
         innhold: (
             <>
+            <h1 id="data"> Du er nå meldt på! </h1> 
+           
                 <img id="retro" src="https://i.pinimg.com/originals/83/d5/e0/83d5e040af429fd72ba7b57924fd3d3b.jpg" alt="pc"/>
 
             </>

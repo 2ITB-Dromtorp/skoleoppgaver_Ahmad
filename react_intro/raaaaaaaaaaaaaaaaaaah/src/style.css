@@ -110,14 +110,41 @@ text-align: left;
 
 
 #retro{
-    width: 30%;
-    justify-content: center;
+    width: 20%;
+    margin-left: auto;
+    font-size: 40px;
+    flex-direction: column;
+}
+
+
+#data{
+    display: flex;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     align-items: center;
-    
+    justify-content: left;
+    text-align: left;
 }
 
 
 
+#norsktekst{
+    display: flex;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+}
 
+#norskbok{
+    width: 30%;
+margin-left: auto;
+font-size: 40px;
+flex-direction: column;
 
+}
 
+#hovedskrift{
+    font-size: 100px;
+}

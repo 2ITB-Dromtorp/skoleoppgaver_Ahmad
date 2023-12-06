@@ -12,7 +12,7 @@ function Kurs({ kursId, kursNavn, kursBeskrivelse, kursBilde }) {
                 {kursBeskrivelse}
             </p>
             <Link to={`/kurs/${kursId}`}>
-                Se kurset
+                Meld deg på ved å trykke her
             </Link>
         </div>
     );
