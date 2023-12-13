@@ -1,0 +1,54 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .form-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+ 
+  label {
+    margin-bottom: 5px;
+  }
+  
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  button[type="submit"],
+  button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+ 
+  button[type="submit"],
+  button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  
+  button[type="submit"]:hover,
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  button + button {
+    margin-left: 10px;
+  }
+  
