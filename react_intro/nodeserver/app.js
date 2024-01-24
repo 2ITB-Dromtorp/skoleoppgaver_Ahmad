@@ -1,27 +1,17 @@
-const http = require('http');
-const fs = require('fs');
+const express = require('express');
+const path = require('path');
+const app = express();
 const port = 3000;
 
-const server = http.createServer(function(req, res) {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    
-    fs.readFile('index.html', function(error, data) {
-        if (error) {
-            res.writeHead(404);
-            res.write('Error: Din fil er ikke funnet helt ærlig sjamener');
-        } else {
-            res.write(data);
-        }
-        res.end(); 
-    });
+// Serve static files from the build directory
+app.use(express.static(path.join(__dirname, 'build')));
 
-    
+// Serve the index.html file for any other requests
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-server.listen(port, function (error) {
-    if (error) {
-        console.log('helt ærlig noe gikk galt as', error);
-    } else {
-        console.log('Server er på port helt ærlig' + port);
-    }
+app.listen(port, () => {
+    console.log('Server is running on port ' + port);
 });
+node
