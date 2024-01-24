@@ -1,23 +1,27 @@
 import React, { useState } from 'react';
 import './index.css'; 
 
-const TicketingSystem = () => {
+const TicketingSystem = () => {    // Notater for megselv til forklarelse, Komponent, to array
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [complaint, setComplaint] = useState('');
   const [ticketSubmitted, setTicketSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setTicketSubmitted(true);
+    setTicketSubmitted(true);   //indikerer en ticket har blitt sent
   };
 
   const handleViewTicket = () => {
-    alert(`Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}`);
+    if (ticketSubmitted) {
+      const ticketDetails = `Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nComplaint: ${complaint}`;
+      alert(ticketDetails);
+    } //sjekker om en ticket har blitt sendt og vis ja, melding 
   };
 
   const handleProgress = () => {
-    alert('Currently being resolved');
+    alert('This ticket is currently being resolved by our team. Thank you for your patience.');
   };
 
   const handleDeleteTicket = () => {
@@ -25,15 +29,17 @@ const TicketingSystem = () => {
     setName('');
     setEmail('');
     setPhoneNumber('');
-    alert('Ticket deleted');
+    setComplaint('');
+    alert('Ticket deleted');   //reseter til false,
   };
-
+ //riktig info,
   return (
-    <div className="container">
+    <div className="container">   
       <h2>Send in Ticket</h2>
+        {/* hvis ticket ikke er sendt inn, hvis form. Hvis ticket er sendt inn, hvis progresjon */}
       {!ticketSubmitted ? (
-        <form onSubmit={handleSubmit}>
-          <div>
+        <form onSubmit={handleSubmit}>  
+          <div className="form-box">
             <label htmlFor="name">Name:</label>
             <input
               type="text"
@@ -42,8 +48,6 @@ const TicketingSystem = () => {
               onChange={(e) => setName(e.target.value)}
               required
             />
-          </div>
-          <div>
             <label htmlFor="email">Email:</label>
             <input
               type="email"
@@ -52,8 +56,6 @@ const TicketingSystem = () => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-          </div>
-          <div>
             <label htmlFor="phoneNumber">Phone Number:</label>
             <input
               type="tel"
@@ -63,8 +65,16 @@ const TicketingSystem = () => {
               placeholder="Enter phone number"
               required
             />
+            <label htmlFor="complaint">Complaint:</label>
+            <textarea
+              id="complaint"
+              value={complaint}
+              onChange={(e) => setComplaint(e.target.value)}
+              required
+            ></textarea>
+            <button type="submit">Submit Ticket</button>
+            <p> Kontakt oss på Hansenfrukt@gmail.com</p>
           </div>
-          <button type="submit">Submit Ticket</button>
         </form>
       ) : (
         <div>
@@ -72,6 +82,7 @@ const TicketingSystem = () => {
           <button onClick={handleViewTicket}>View Ticket</button>
           <button onClick={handleProgress}>Progress</button>
           <button onClick={handleDeleteTicket}>Delete Ticket</button>
+          
         </div>
       )}
     </div>

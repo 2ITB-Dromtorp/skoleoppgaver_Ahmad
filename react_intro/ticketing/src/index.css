@@ -9,9 +9,9 @@
   
   
   .form-box {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
+    border: 10px solid #ccc;
+    border-radius: 10px;
+    padding: 100px;
     width: 300px;
     margin-bottom: 20px;
   }
@@ -27,18 +27,22 @@
   input[type="tel"],
   button[type="submit"],
   button {
-    width: 100%;
-    padding: 8px;
+    width: 80%;
+    padding: 15px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 3px;
   }
+
+  
  
   button[type="submit"],
   button {
     background-color: #007bff;
     color: white;
     cursor: pointer;
+    width: 95%;
+    
   }
   
   
@@ -51,4 +55,11 @@
   button + button {
     margin-left: 10px;
   }
+
+
+  #complaint{
+    width: 90%;
+  }
+
+  
   
