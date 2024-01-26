@@ -14,6 +14,6 @@ app.listen(port, () => {
     */
    //alle APIer skal OVER denne kommentaren
     app.get("*", (req, res) => {
-        res.sendFile("/build/index.html");
+        res.sendFile("build/index.html");
     });
 });
