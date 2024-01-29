@@ -3,6 +3,7 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 app.use(express.static("build"));
+app.use(express.static("/public", ""))
 
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
