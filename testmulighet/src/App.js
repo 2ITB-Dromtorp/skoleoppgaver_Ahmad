@@ -3,7 +3,8 @@ import './App.css';
 function App() {
   const skibidi = () => {
     alert("Gjør ditt beste, og din potensiale vil gro med en voksende tankegang")
-    window.location.href="https://www.youtube.com/watch?v=1xS93ReYT9I";
+    const sound = new Audio("/public/musikk.mp3");
+    sound.play();
   }
   return (
   <div id='main' onClick={skibidi}>
