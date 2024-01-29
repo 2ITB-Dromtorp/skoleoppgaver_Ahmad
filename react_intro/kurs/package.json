@@ -1,0 +1,8 @@
+{
+  "name": "kurs",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react-router-dom": "^6.19.0"
+  }
+}
