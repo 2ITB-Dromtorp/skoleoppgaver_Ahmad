@@ -60,34 +60,37 @@ function App() {
   };
 
   return (
-    <div className="quiz-container">
-      <div className="app">
-        {!showResult ? (
-          <div className="question-container">
-            <div className="question">{questions[currentQuestion].question}</div>
-            <div className="options">
-              {questions[currentQuestion].options.map((option, index) => (
-                <div key={index} className="option">
-                  <input
-                    type="radio"
-                    id={`option${index}`}
-                    name="answer"
-                    value={index}
-                    onChange={() => handleAnswerSelect(index)}
-                    checked={selectedAnswers[currentQuestion] === index}
-                  />
-                  <label htmlFor={`option${index}`}>{option}</label>
-                </div>
-              ))}
+    <div>
+      <div className="header">Quiz</div> 
+      <div className="quiz-container">
+        <div className="app">
+          {!showResult ? (
+            <div className="question-container">
+              <div className="question">{questions[currentQuestion].question}</div>
+              <div className="options">
+                {questions[currentQuestion].options.map((option, index) => (
+                  <div key={index} className="option">
+                    <input
+                      type="radio"
+                      id={`option${index}`}
+                      name="answer"
+                      value={index}
+                      onChange={() => handleAnswerSelect(index)}
+                      checked={selectedAnswers[currentQuestion] === index}
+                    />
+                    <label htmlFor={`option${index}`}>{option}</label>
+                  </div>
+                ))}
+              </div>
+              <button onClick={handleNextQuestion}>Neste</button>
             </div>
-            <button onClick={handleNextQuestion}>Neste</button>
-          </div>
-        ) : (
-          <div className="result-container">
-            <div>Du fikk {calculateScore()} av {questions.length} riktige svar!</div>
-            <button onClick={resetQuiz}>Ta quiz på nytt</button>
-          </div>
-        )}
+          ) : (
+            <div className="result-container">
+              <div>Du fikk {calculateScore()} av {questions.length} riktige svar!</div>
+              <button onClick={resetQuiz}>Ta quiz på nytt</button>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

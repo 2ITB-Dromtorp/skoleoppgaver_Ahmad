@@ -1,83 +1,96 @@
 body {
-    background-image: url('https://i.pinimg.com/564x/3b/4c/00/3b4c0036b590cc1977d03230bb7d34f0.jpg');
-  background-size: 390px; /* Cover the entire viewport */
-  background-position: right; /* Center the background image */
-  background-repeat: no-repeat; /* Do not repeat the background image */
+    background-color: #000000;
     font-family: Arial, sans-serif;
+    color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f8f9fa;
-  }
-  
-  .quiz-container {
+}
+
+.quiz-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-  }
-  
-  .app {
-    background-color: #ffffff;
+}
+
+.app {
+    background-color: #111111;
     padding: 100px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 600px;
     text-align: center;
-  }
-  
-  .question {
+}
+
+.header {
+    background-color: #000000;
+    padding: 20px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 10px #570a85, 0 0 20px #84098d, 0 0 40px #5c0a93, 0 0 80px #560756;
+    font-family: 'Roboto', sans-serif;
+}
+
+.question {
     font-size: 22px;
     margin-bottom: 20px;
-    color: #333333;
-  }
-  
-  .options {
+}
+
+.options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-  }
-  
-  .option {
-    border: 1px solid #ccc;
+}
+
+.option {
+    border: 1px solid #3e0546;
     border-radius: 8px;
-    transition: background-color 0.3s ease; /* Legg til overgangseffekten */
-  }
-  
-  .option label {
+    transition: background-color 0.3s ease;
+}
+
+.option label {
     display: block;
     padding: 10px;
-  }
-  
-  .option input {
-    display: none; /* Skjul radio-inputen */
-  }
-  
-  .option:hover {
-    background-color: #f0f0f0; /* Endre bakgrunnsfargen ved hover */
-  }
-  
-  .option input:checked + label {
-    background-color: #007bff; /* Endre bakgrunnsfargen til mørkeblå når valgt */
-    color: #ffffff; /* Endre tekstfargen til hvit når valgt */
-  }
-  
-  button {
+}
+
+.option input {
+    display: none;
+}
+
+.option:hover {
+    background-color: #333333;
+}
+
+.option input:checked + label {
+    background-color: #800080;
+    color: #ffffff;
+}
+
+button {
     margin-top: 20px;
     padding: 12px 24px;
     font-size: 18px;
     border: none;
     border-radius: 8px;
-    background-color: #007bff;
+    background-color: #800080;
     color: #ffffff;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #600060;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+    background-color: #400040;
+    box-shadow: none;
+}
