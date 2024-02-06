@@ -15,6 +15,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    @media screen {
+        width: 250px;
+    }
 }
 
 .app {
@@ -33,13 +36,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 0 0 10px #570a85, 0 0 20px #84098d, 0 0 40px #5c0a93, 0 0 80px #560756;
+    text-shadow: 0 0 10px #570a85, 0 0 20px #84098d, 0 0 40px #450b6b, 0 0 80px #560756;
     font-family: 'Roboto', sans-serif;
 }
 
 .question {
     font-size: 22px;
     margin-bottom: 20px;
+    @media screen {
+        font-size: medium;
+        width: 350px;
+        padding: 30px;
+    }
 }
 
 .options {

@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(202, 189, 189); /* Set the background color of the body to black */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set a default font family */
+  }
+  
+  header {
+    background-color: #000000; /* Purple background for header */
+    color: #fff; /* White text color */
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px auto;
+  }
+  
+  .quiz {
+    background-color: #f0f0f0; /* Light gray background for quiz */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  h2 {
+    margin-top: 0;
+    color: #8a2be2; /* Purple text color */
+  }
+  
+  a {
+    color: #0066cc; /* Blue link color */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #8a2be2; /* Purple background for footer */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 1;
+  }
+  
+  footer {
+    background-color: #8a2be2;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+  }
+  
+
+
+  #quizzes{
+    justify-content: center;
+    text-align: center;
+  }
