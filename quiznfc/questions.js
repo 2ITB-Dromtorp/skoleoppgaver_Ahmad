@@ -15,8 +15,8 @@
       "correctAnswer": 1
     },
     {
-      "question": "Hvorfor bruke React?",
-      "options": ["Enklere håndtering av tilstand", "Bedre SEO", "Flere innebygde funksjoner", "Enklere håndtering av stil"],
+      "question": "Hva står VM for",
+      "options": ["Virtual Machine", "Verdensmester", "Hva menes med livet", "Hvordan"],
       "correctAnswer": 0
     }
   ]
