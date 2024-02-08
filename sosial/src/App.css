@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(33, 3, 3); 
+    background-color: rgb(79, 52, 52); 
     margin: 0; 
     font-family: Arial, sans-serif; 
   }
@@ -54,6 +54,8 @@ body {
   
   .container {
     flex: 1;
+    width: 500px;
+    
   }
   
   footer {
