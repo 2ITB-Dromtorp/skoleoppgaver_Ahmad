@@ -74,4 +74,6 @@ body {
   #quizzes{
     justify-content: center;
     text-align: center;
+    font-size: 90px;
+    text-shadow: 0 0 10px #570a85, 0 0 20px #730404, 0 0 40px #000000, 0 0 80px #000000;
   }
