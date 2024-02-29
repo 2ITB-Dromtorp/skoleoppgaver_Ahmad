@@ -1,0 +1,23 @@
+[
+    {
+      "question": "Hva er en Loop",
+      "options": ["Loops brukes i JavaScript for å utføre gjentatte oppgaver basert på en tilstand.',", "java", "Webdesign", "Grafisk design"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Hva er koden? console.log(typeof NaN);",
+      "options": ["Null", "Nummer", "NaN", "undefines"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Hva er outputen til denne koden? console.log(018 - 015);",
+      "options": ["3", "5", "9", "10"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Er Java det samme som javascript?",
+      "options": ["Nei", "Ja", "Uhm", "java er bedre en javascript"],
+      "correctAnswer": 0
+    }
+  ]
+  

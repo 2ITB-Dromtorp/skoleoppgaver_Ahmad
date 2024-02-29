@@ -16,18 +16,15 @@ function App() {
           <h2>Ahmad's Quiz</h2>
           
         </div>
-        <div className="quiz" onClick={() => handleQuizClick("YOUR_CUSTOM_LINK_HERE")}>
-          <h2>Additional Quiz 2</h2>
+        <div className="quiz" onClick={() => handleQuizClick("")}>
+          <h2>Quiz 2</h2>
           
         </div>
       </div>
       <div className="container">
-        <div className="quiz" onClick={() => handleQuizClick("YOUR_CUSTOM_LINK_HERE")}>
-          <h2>Additional Quiz 3</h2>
+        <div className="quiz" onClick={() => handleQuizClick("")}>
+          <h2>Quiz 3</h2>
           
-        </div>
-        <div className="quiz" onClick={() => handleQuizClick("YOUR_CUSTOM_LINK_HERE")}>
-          <h2>Additional Quiz 4</h2>
           
         </div>
       </div>

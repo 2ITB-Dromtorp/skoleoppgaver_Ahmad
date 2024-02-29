@@ -4,22 +4,22 @@ import './App.css';
 const questions = [
   {
     question: 'Spørsmål 1. Hva er en Loop',
-    options: ['Loops brukes i JavaScript for å utføre gjentatte oppgaver basert på en tilstand.', '🤡', 'Webdesign', 'Grafisk design'],
+    options: ['Loops brukes i JavaScript for å utføre gjentatte oppgaver basert på en tilstand.', 'java', 'Webdesign', 'Grafisk design'],
     correctAnswer: 0,
   },
   {
-    question: 'Spørsmål 2. Hva er en vanlig oppgave innenfor IT utvikling?',
-    options: ['Feilsøking', 'Programmering', 'Nettverksadministrasjon', 'Databaseadministrasjon'],
+    question: 'Hva er koden? console.log(typeof NaN);',
+    options: ['Null', 'Number', 'Undefines', 'Databaseadministrasjon'],
     correctAnswer: 1,
   },
   {
-    question: 'Spørsmål 3.Hva står CSS for?',
-    options: ['Computer Style Sheets', 'Cascading Style Sheets', 'Creative Style Sheets', 'Cute Style Sheets'],
+    question: 'Hva er outputen til denne koden? console.log(018 - 015);',
+    options: ['3', '5', '9', '10'],
     correctAnswer: 1,
   },
   {
-    question: 'Hva står VM for',
-    options: ['Virtual Machine', 'Verdensmester', 'Hva menes med livet', 'HVOR MAN?'],
+    question: 'Er Java det samme som javascript?',
+    options: ['Nei', 'Ja', 'Uhm', 'java er bedre en javascript'],
     correctAnswer: 0,
   },
 ];

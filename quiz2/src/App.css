@@ -72,11 +72,11 @@ body {
 }
 
 .option:hover {
-    background-color: #333333;
+    background-color: #000000;
 }
 
 .option input:checked + label {
-    background-color: #800080;
+    background-color: #911212;
     color: #ffffff;
 }
 
@@ -99,6 +99,6 @@ button:hover {
 }
 
 button:active {
-    background-color: #400040;
+    background-color: #000000;
     box-shadow: none;
 }
